@@ -6,12 +6,11 @@
 
 <!-- ========= ANIMATED SECTION TITLE (đã mix màu trong SVG) ========= -->
 <p align="center">
-  <img
-    src="https://raw.githubusercontent.com/TuMaiNguyen/Profile-for-GITHUB-Tu-Mai-Nguyen/main/assets/banners/my-bio.svg?sanitize=true"
-    alt="MY BIO banner"
-    width="82%"
-  />
+  <img src="https://tumainguyen.github.io/Profile-for-GITHUB-Tu-Mai-Nguyen/assets/banners/my-bio-glass.svg" 
+       alt="MY BIO glass neon banner" 
+       width="882%"/>
 </p>
+
 
 <!-- ========= TYPING INTRO (màu Deep Navy) ========= -->
 <p align="center">
@@ -147,7 +146,7 @@
 
 ---
 
-## 📊 GitHub Stats (mix màu – nền trong suốt)
+## 📊 GitHub Stats 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=TuMaiNguyen&show_icons=true&hide_border=true&bg_color=00000000&title_color=0F172A&text_color=0F172A&icon_color=27E0C0&ring_color=FF8EC7" height="160" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TuMaiNguyen&layout=compact&hide_border=true&bg_color=00000000&title_color=0F172A&text_color=0F172A" height="160" />
