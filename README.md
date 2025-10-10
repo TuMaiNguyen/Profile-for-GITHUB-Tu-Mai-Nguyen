@@ -1,3 +1,14 @@
+<!-- COVER -->
+<p align="center">
+  <img src="https://i.pinimg.com/736x/45/13/c2/4513c2e7cf4cbbc2577d0eb6785e1fe9.jpg"
+       alt="Spring sky & sailboat cover"
+       width="100%" />
+</p>
+
+<hr/>
+
+## 👩‍💻 Thông tin cá nhân
+
 <h1 align="center">Xin chào, mình là Nguyễn Đỗ Tú Mai 👋</h1>
 
 <p align="center">
