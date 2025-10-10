@@ -125,7 +125,6 @@
   <br/><br/>
   <img src="./anh1.jpg" width="32%" alt="3D Project – view 1"/>
   <img src="./anh2.jpg" width="32%" alt="3D Project – view 2"/>
-  <img src="./cover.jpg" width="32%" alt="Case extra"/>
 </div>
 
 ---
