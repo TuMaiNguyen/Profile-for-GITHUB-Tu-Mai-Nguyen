@@ -14,7 +14,8 @@
 
 ---
 
-## 📬 Contact me
+## 💌 Contact me
+
 <ul>
   <li>
     <img src="https://cdn.simpleicons.org/gmail/EA4335" width="18" alt="Gmail"/>
@@ -22,18 +23,16 @@
   </li>
   <li>
     <img src="https://cdn.simpleicons.org/facebook/1877F2" width="18" alt="Facebook"/>
-    <!-- TODO: cập nhật link Facebook thật của bạn -->
-    <a href="[https://facebook.com/](https://www.facebook.com/tmaingyn/)">Tu Mai Nguyen</a>
+    <a href="https://www.facebook.com/tmaingyn/" target="_blank">Tu Mai Nguyen</a>
   </li>
   <li>
     <img src="https://cdn.simpleicons.org/instagram/E4405F" width="18" alt="Instagram"/>
-    <a href="https://instagram.com/maydate_">@maydate_</a>
+    <a href="https://instagram.com/maydate_" target="_blank">@maydate_</a>
   </li>
   <li>
     📞 <a href="tel:+84857346510">0857 346 510</a>
   </li>
 </ul>
-
 ---
 
 ## 🎓 Trình độ học vấn
@@ -109,22 +108,25 @@
 - **Bộ bài giảng Ngữ văn/Tiếng Anh – rút gọn tác phẩm**  
 ## 📚 Tài liệu Ngữ văn/Tiếng Anh đã từng soạn 
 
+## 📚 Tài liệu Ngữ văn/Tiếng Anh đã từng soạn
+
 > Nhấn vào tên để tải/xem ngay trên GitHub.  
 > 🟦 = DOCX · 🟥 = PDF
 
 ### 📝 Đề thi / Đề số
-- 🟦 **[Đề thi thử 28-3 đápđasp án.docx](đề thi thử 28-3 đápđasp án.docx)**
-- 🟦 **[Đề 03.docx](Đề 03.docx)**
+- 🟦 [Đề thi thử 28-3 đápđasp án.docx](<./Đề thi thử 28-3 đápđasp án.docx>)
+- 🟦 [Đề 03.docx](<./Đề 03.docx>)
 
 ### 🔁 Ôn tập
-- 🟦 **[ĐỀ ÔN 12-4, Chế lan viên.docx](ĐỀ ÔN 12-4, Chế lan viên.docx)**
-- 🟦 **[Đề ôn tập 7-1 đáp án.docx](Đề ôn tập 7-1 đáp án.docx)**
+- 🟦 [ĐỀ ÔN 12-4, Chế lan viên.docx](<./ĐỀ ÔN 12-4, Chế lan viên.docx>)
+- 🟦 [Đề ôn tập 7-1 đáp án.docx](<./Đề ôn tập 7-1 đáp án.docx>)
 
 ### 📌 Bài soạn / NLXH
-- 🟦 **[-Trích-dẫn-Mở-đoạn-Kết-đoạn-NLXH.docx](-Trích-dẫn-Mở-đoạn-Kết-đoạn-NLXH.docx)**
+- 🟦 [-Trích-dẫn-Mở-đoạn-Kết-đoạn-NLXH.docx](<./-Trích-dẫn-Mở-đoạn-Kết-đoạn-NLXH.docx>)
 
 ### 📄 Dạng bài
-- 🟥 **[DẠNG BÀI SẮP XẾP CÂU TẠO THÀNH ĐOẠN HỘI THOẠI-ĐOẠN VĂN- LÁ THƯ (1).pdf](DẠNG BÀI SẮP XẾP CÂU TẠO THÀNH ĐOẠN HỘI THOẠI-ĐOẠN VĂN- LÁ THƯ (1).pdf)**
+- 🟥 [DẠNG BÀI SẮP XẾP CÂU TẠO THÀNH ĐOẠN HỘI THOẠI-ĐOẠN VĂN- LÁ THƯ (1).pdf](<./DẠNG BÀI SẮP XẾP CÂU TẠO THÀNH ĐOẠN HỘI THOẠI-ĐOẠN VĂN- LÁ THƯ (1).pdf>)
+
 
 ---
 
@@ -133,7 +135,7 @@
 - Xem & phân tích các dự án Design để học hỏi.
 - Phân tích thơ/tác phẩm văn học Chế Lan Viên (1920–1989), Hàn Mặc Tử (1912–1940).
 - Tham gia workshop chuyên ngành; đọc sách về lịch sử, chiến tranh, kháng chiến.
-- Học Tiếng Anh qua việc đọc các bài báo song ngữngữ
+- Học Tiếng Anh qua việc đọc các bài báo song ngữ
 ---
 
 ## 💼 Kinh nghiệm
