@@ -5,9 +5,12 @@
 </p>
 
 <!-- ========= ANIMATED SECTION TITLE (đã mix màu trong SVG) ========= -->
-<!-- Đảm bảo file assets/banners/my-bio.svg đang dùng bản Ocean–Sunset mình đưa -->
 <p align="center">
-  <img src="assets/banners/my-bio.svg" alt="MY BIO" width="72%"/>
+  <img
+    src="https://raw.githubusercontent.com/TuMaiNguyen/Profile-for-GITHUB-Tu-Mai-Nguyen/main/assets/banners/my-bio.svg?sanitize=true"
+    alt="MY BIO banner"
+    width="82%"
+  />
 </p>
 
 <!-- ========= TYPING INTRO (màu Deep Navy) ========= -->
@@ -154,6 +157,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/TuMaiNguyen/Profile-for-GITHUB-Tu-Mai-Nguyen/output/snake.svg" alt="snake animation"/>
 </p>
+
 
 ---
 
