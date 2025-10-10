@@ -3,6 +3,7 @@
   <img src="https://i.pinimg.com/736x/45/13/c2/4513c2e7cf4cbbc2577d0eb6785e1fe9.jpg"
        alt="Spring sky & sailboat cover" width="100%" />
 </p>
+<p align="center"><img src="assets/banners/my-bio-glass.svg" alt="MY BIO banner (glass neon)" width="82%"/></p>
 
 <h1 align="center">Nguyễn Đỗ Tú Mai</h1>
 <p align="center">
