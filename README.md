@@ -94,13 +94,20 @@
 ---
 
 ## 📁 Dự án cá nhân
-> (Hướng dẫn cách chèn ảnh xem ở mục “Cách up hình vào README” bên dưới)
 
 - **Case Study – Poster/Branding mini**  
-  Mô tả ngắn gọn về bài làm, mục tiêu, insight và kết quả.
-  <!-- Ví dụ chèn ảnh minh hoạ:
-  <img src="assets/projects/poster-01.jpg" width="700" alt="Poster 01"/>
-  -->
+ ![3D Project – cover](anh.jpg)
+![3D Project – view 1](anh1.jpg)
+![3D Project – view 2](anh2.jpg)
+
+<div align="center">
+  <img src="anh.jpg"  width="80%" alt="3D Project – cover"/>
+  <br/><br/>
+  <img src="anh1.jpg" width="49%" alt="3D Project – view 1"/>
+  <img src="anh2.jpg" width="49%" alt="3D Project – view 2"/>
+</div>
+
+[<img src="anh.jpg" width="70%" alt="3D Project – cover"/>](anh.jpg)
 
 - **Bộ bài giảng Ngữ văn – rút gọn tác phẩm**  
   Tóm tắt cấu trúc bài giảng, phương pháp và phản hồi của học sinh.
