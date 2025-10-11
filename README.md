@@ -90,7 +90,7 @@
 
 ## 🎓 Trình độ học vấn
 - HSG Ngữ Văn cấp Thành phố (2023); 3 năm liền trong đội tuyển HSG Ngữ Văn THPT Phan Đăng Lưu (Q. Bình Thạnh).
-- Thủ khoa khối: Ngữ Văn 9.0, Tiếng Anh 9.6 (THPTQG 2023).
+- Ngữ Văn 9.0, Tiếng Anh 9.6 (Kì thi tốt nghiệp THPTQG 2023).
 - TOEIC: 795/990 · IELTS: 6.5
 - GPA: 2 học kỳ đạt > 3.27/4.0 (Loại Giỏi)
 
