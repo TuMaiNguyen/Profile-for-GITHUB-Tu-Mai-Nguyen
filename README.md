@@ -128,10 +128,60 @@
   <a href="#du-an-2" title="Poster Series"><img src="./anh1.jpg" width="30%" alt="Project 2"/></a>
   <a href="#du-an-3" title="Lesson Kit"><img src="./anh2.jpg" width="30%" alt="Project 3"/></a>
 </div>
+<!-- START: LABS INDEX -->
+## 🧪 Danh sách LAB đã hoàn thành
+
+> Bấm vào tên để mở repo/thư mục. Với Lab 05 có link PDF trực tiếp.
+
+### 🔹 Repo nhóm 
+**se-atm-2025-group-mai-thuy-han**  
+https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han
+
+<details>
+  <summary><b>📂 Xem 8 lab trong thư mục <code>labs/</code></b></summary>
+
+- LAB01 — Thiết lập môi trường & Quản lý dự án  
+  https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab01
+
+- LAB02 — Phân tích yêu cầu (Use Case – nhóm)  
+  https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab02
+
+- LAB03 — UML (nhóm)  
+  https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab03
+
+- LAB04 — Coding form Login (HTML/CSS/JS)  
+  https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab04-login
+
+- LAB05 — Report tổng hợp (nhóm)  
+  https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab05-report
+
+- LAB06 — ATM: Class & Package Diagram  
+  https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab06-atm-class
+
+- LAB07 — Module Rút tiền (Prototype)  
+  https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab07-withdraw-module
+
+- LAB08 — Kiểm thử ATM (Unit & Integration)  
+  https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab08-testing
+</details>
 
 ---
 
-## 📘 Tài liệu Ngữ văn/Tiếng Anh
+### 🔹 Repo cá nhân theo từng lab
+| # | Lab | Link chính | Ghi chú |
+|---|-----|------------|--------|
+| 02 | Hotel Booking (Use Case – cá nhân) | https://github.com/TuMaiNguyen/lab02-hotel-booking-mai | Có UC + mô tả |
+| 03 | Testing Login (Selenium + pytest) | https://github.com/TuMaiNguyen/n23dcpt091-lab03-login | Có test & báo cáo |
+| 05 | Lecture 05 – Testing (tài liệu + bài làm) | https://github.com/TuMaiNguyen/Lecture05-Testing-N23DCPT091 | PDF ở cột dưới |
+
+**📑 PDF trực tiếp (Lab 05):**  
+- Bài giảng: <https://github.com/TuMaiNguyen/Lecture05-Testing-N23DCPT091/blob/main/Lecture%2005%20Testing.pdf>  
+- Bài làm (Nguyễn Đỗ Tú Mai): <https://github.com/TuMaiNguyen/Lecture05-Testing-N23DCPT091/blob/main/NGUYỄN%20ĐỖ%20TÚ%20MAI-N23DCPT091-LECTURE05-TESTING.pdf>
+<!-- END: LABS INDEX -->
+
+---
+
+## 📘 Tài liệu Ngữ văn/Tiếng Anh đã từng soạn 
 <details>
   <summary><b>📚 Danh sách tập tin (bấm để mở)</b></summary>
 
