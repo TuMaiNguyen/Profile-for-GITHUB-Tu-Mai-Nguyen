@@ -31,7 +31,7 @@ layout: none
     h2{margin:0 0 8px}
     .muted{color:var(--muted)}
     .grid{display:grid; gap:16px}
-    .cards{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+    .grid.cards{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
     .card{background:var(--card); border:1px solid rgba(151,160,195,.12); border-radius:16px; padding:18px; transition:.2s transform, .2s box-shadow, .2s border-color}
     .card:hover{transform:translateY(-2px); border-color:rgba(122,162,255,.45); box-shadow:0 10px 28px var(--ring)}
     .tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
@@ -67,6 +67,9 @@ layout: none
       <div style="margin-top:18px">
         <a class="btn" href="#labs">Xem tất cả Labs</a>
       </div>
+      <!-- Ảnh cover của bạn ở root repo -->
+      <img src="{{ site.baseurl }}/cover.jpg" alt="Cover"
+           style="width:100%; max-width:560px; border-radius:16px; margin:14px 0; border:1px solid rgba(151,160,195,.18)">
     </div>
     <div class="card">
       <h3 style="margin:0 0 8px">Liên hệ</h3>
@@ -86,13 +89,30 @@ layout: none
     </div>
   </section>
 
-  <!-- LABS (Group repo có đủ Lab01→Lab08) -->
+  <!-- LABS (đã cắm sẵn link) -->
   <section id="labs">
     <h2>Labs — SE-ATM (Group & Solo)</h2>
-    <p class="muted">Nhóm repo (đủ Lab01→Lab08): <a href="https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han" target="_blank">se-atm-2025-group-mai-thuy-han</a></p>
 
+    <!-- QUICK LINKS để thầy bấm nhanh -->
+    <div class="card" style="margin:10px 0 16px">
+      <b>Quick links</b>
+      <ul style="margin:10px 0 0; padding-left:20px">
+        <li><a target="_blank" href="https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab01">Lab 01 — Intro / Git (Group)</a></li>
+        <li><a target="_blank" href="https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab02">Lab 02 — Requirements (Group)</a></li>
+        <li><a target="_blank" href="https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab03">Lab 03 — Design (Group)</a></li>
+        <li><a target="_blank" href="https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab04-login">Lab 04 — Login Module (Group)</a></li>
+        <li><a target="_blank" href="https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab05-report">Lab 05 — Report (Group)</a></li>
+        <li><a target="_blank" href="https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab06-atm-class">Lab 06 — ATM Class (Group)</a></li>
+        <li><a target="_blank" href="https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab07-withdraw-module">Lab 07 — Withdraw Module (Group)</a></li>
+        <li><a target="_blank" href="https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab08-testing">Lab 08 — Testing (Group)</a></li>
+        <li><a target="_blank" href="https://github.com/TuMaiNguyen/lab02-hotel-booking-mai">Lab 02 — Hotel Booking (Solo)</a></li>
+        <li><a target="_blank" href="https://github.com/TuMaiNguyen/n23dcpt091-lab03-login">Lab 03 — Login (Solo)</a></li>
+        <li><a target="_blank" href="https://github.com/TuMaiNguyen/Lecture05-Testing-N23DCPT091">Lecture 05 — Testing (Repo)</a></li>
+      </ul>
+    </div>
+
+    <!-- Cards đẹp -->
     <div class="grid cards">
-      <!-- Group repo: từng lab -->
       <article class="card">
         <h3><a target="_blank" href="https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab01">Lab 01 — Intro / Git</a></h3>
         <div class="tags"><span class="tag">Git</span><span class="tag">HTML/CSS</span></div>
@@ -133,13 +153,6 @@ layout: none
         <div class="tags"><span class="tag">Testing</span></div>
       </article>
 
-      <!-- (Optional) tài liệu phụ Lab04 trong /docs -->
-      <article class="card">
-        <h3><a target="_blank" href="https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/docs/lab04">Lab 04 — Docs (folder)</a></h3>
-        <div class="tags"><span class="tag">Docs</span></div>
-      </article>
-
-      <!-- SOLO LAB 02 -->
       <article class="card">
         <h3><a target="_blank" href="https://github.com/TuMaiNguyen/lab02-hotel-booking-mai">Lab 02 — Hotel Booking (repo riêng)</a></h3>
         <ul style="margin:8px 0 0; padding-left:18px">
@@ -150,7 +163,6 @@ layout: none
         <div class="tags"><span class="tag">UML</span><span class="tag">SQL</span></div>
       </article>
 
-      <!-- SOLO LAB 03 -->
       <article class="card">
         <h3><a target="_blank" href="https://github.com/TuMaiNguyen/n23dcpt091-lab03-login">Lab 03 — Login (repo riêng)</a></h3>
         <ul style="margin:8px 0 0; padding-left:18px">
@@ -190,3 +202,4 @@ layout: none
 </script>
 </body>
 </html>
+
