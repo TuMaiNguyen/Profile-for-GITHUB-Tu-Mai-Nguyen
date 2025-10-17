@@ -10,46 +10,48 @@ layout: none
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>{{ page.title }}</title>
   <meta name="description" content="Hồ sơ & Labs của Nguyễn Đỗ Tú Mai (N23DCPT091) — PTIT">
+
   <style>
     :root{
-      --bg:#0b1020; --card:#121a33; --muted:#97a0c3; --text:#e7ecff; --brand:#7aa2ff; --brand2:#9ae7ff; --ring:rgba(122,162,255,.35);
+      --bg:#0b1020; --card:#121a33; --muted:#97a0c3; --text:#e7ecff;
+      --brand:#7aa2ff; --brand2:#9ae7ff; --ring:rgba(122,162,255,.35);
     }
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:#0b1020; color:var(--text); font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;}
+    html,body{margin:0;padding:0;background:#0b1020;color:var(--text);
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;}
     a{color:var(--brand); text-decoration:none}
     a:hover{text-decoration:underline}
+
     .container{max-width:1100px; margin:0 auto; padding:24px}
-    header{position:sticky; top:0; backdrop-filter:saturate(120%) blur(8px); background:rgba(11,16,32,.65); border-bottom:1px solid rgba(151,160,195,.12); z-index:5}
+    header{position:sticky; top:0; z-index:10;
+      background:rgba(11,16,32,.8); backdrop-filter:saturate(120%) blur(8px);
+      border-bottom:1px solid rgba(151,160,195,.12)}
     .nav{display:flex; align-items:center; justify-content:space-between; gap:16px}
     .nav .brand{font-weight:700; letter-spacing:.3px}
     .nav ul{display:flex; gap:18px; list-style:none; margin:0; padding:0}
-    .btn{display:inline-block; padding:10px 14px; border-radius:12px; background:linear-gradient(135deg,var(--brand),var(--brand2)); color:#0b1020; font-weight:600; box-shadow:0 6px 18px var(--ring)}
-    /* ===== FIX: HERO dùng ảnh nền, bỏ khoảng trống đen ===== */
-    .hero{
-      position:relative;
-      display:grid; grid-template-columns:1.2fr .8fr; gap:28px;
-      padding:28px; border-radius:16px; overflow:hidden;
-      background:
-        linear-gradient(180deg, rgba(7,10,22,.25), rgba(7,10,22,.55)),
-        url('{{ "/cover.jpg" | relative_url }}') center/cover no-repeat;
-      box-shadow:0 12px 30px rgba(0,0,0,.25), inset 0 0 0 1px rgba(151,160,195,.14);
-      margin-top:16px;
-    }
-    .hero h1{margin:0 0 10px; font-size:40px; line-height:1.15}
-    .chip{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border:1px solid rgba(151,160,195,.25); border-radius:999px; color:var(--text); background:rgba(12,18,36,.35); font-size:13px}
-    section{padding:28px 0}
-    /* anchor không bị header che */
-    section[id]{scroll-margin-top: 80px;}
+    .btn{display:inline-block; padding:10px 14px; border-radius:12px;
+      background:linear-gradient(135deg,var(--brand),var(--brand2)); color:#0b1020;
+      font-weight:600; box-shadow:0 6px 18px var(--ring)}
+
+    /* ==== HERO ẢNH ĐƠN GIẢN – KHÔNG CÒN MẢNG ĐEN ==== */
+    .hero-img{margin:16px auto 8px; border-radius:16px; overflow:hidden;
+      border:1px solid rgba(151,160,195,.18); background:#0f1630}
+    .hero-img img{display:block; width:100%; height:auto}
+
+    section{padding:24px 0}
+    section[id]{scroll-margin-top:84px} /* để anchor không bị header che */
     h2{margin:0 0 8px}
     .muted{color:var(--muted)}
+
     .grid{display:grid; gap:16px}
     .grid.cards{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
-    .card{background:var(--card); border:1px solid rgba(151,160,195,.12); border-radius:16px; padding:18px; transition:.2s transform, .2s box-shadow, .2s border-color}
+    .card{background:var(--card); border:1px solid rgba(151,160,195,.12);
+      border-radius:16px; padding:18px; transition:.2s transform,.2s box-shadow,.2s border-color}
     .card:hover{transform:translateY(-2px); border-color:rgba(122,162,255,.45); box-shadow:0 10px 28px var(--ring)}
     .tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
-    .tag{font-size:12px; color:#0b1020; background:linear-gradient(135deg,var(--brand),var(--brand2)); padding:4px 8px; border-radius:999px}
+    .tag{font-size:12px; color:#0b1020; background:linear-gradient(135deg,var(--brand),var(--brand2));
+      padding:4px 8px; border-radius:999px}
     footer{padding:24px 0 48px; color:var(--muted)}
-    @media (max-width:900px){ .hero{grid-template-columns:1fr; padding:22px} }
   </style>
 </head>
 <body>
@@ -67,42 +69,26 @@ layout: none
 </header>
 
 <main class="container">
-  <!-- HERO: giờ là banner ảnh nền, không còn “mảng đen” -->
-  <section class="hero" aria-label="Hero">
-    <div>
-      <h1>Portfolio & Labs</h1>
-      <p class="muted">PTIT • Multimedia Technology • GitHub Pages</p>
-      <div style="display:flex; gap:10px; margin:14px 0 0">
-        <span class="chip">UI/UX • Graphic • AE 2023</span>
-        <span class="chip">Git • HTML/CSS • Selenium</span>
-      </div>
-      <div style="margin-top:18px">
-        <a class="btn" href="#labs">Xem tất cả Labs</a>
-      </div>
-    </div>
-    <div class="card" style="background:rgba(18,26,51,.85); backdrop-filter:saturate(120%) blur(2px)">
-      <h3 style="margin:0 0 8px">Liên hệ</h3>
-      <div class="muted">Email: <a href="mailto:tumai@example.com">tumai@example.com</a></div>
-      <div class="muted">GitHub: <a href="https://github.com/TuMaiNguyen" target="_blank">/TuMaiNguyen</a></div>
-      <div class="muted">Site: <a href="https://tumainguyen.github.io/Profile-for-GITHUB-Tu-Mai-Nguyen/">GitHub Pages</a></div>
-    </div>
-  </section>
 
-  <!-- ABOUT (lấy README) -->
+  <!-- ẢNH COVER Ở ĐẦU TRANG (không ảnh nền, không overlay) -->
+  <figure class="hero-img">
+    <img src="{{ '/cover.jpg' | relative_url }}" alt="Cover image">
+  </figure>
+
+  <!-- ABOUT: render README -> sẽ thấy ngay “MY BIO / Branding …” -->
   <section id="about">
     <h2>About</h2>
-    <div class="muted">Nội dung dưới lấy trực tiếp từ <code>README.md</code> của repo này.</div>
-    <div class="card" style="margin-top:12px; background:#0f1630">
+    <div class="muted">Nội dung lấy trực tiếp từ <code>README.md</code> của repo này.</div>
+    <div class="card" style="margin-top:12px">
       {% capture readme_raw %}{% include_relative README.md %}{% endcapture %}
       {{ readme_raw | markdownify }}
     </div>
   </section>
 
-  <!-- LABS (đã cắm sẵn link) -->
+  <!-- LABS -->
   <section id="labs">
     <h2>Labs — SE-ATM (Group & Solo)</h2>
 
-    <!-- QUICK LINKS -->
     <div class="card" style="margin:10px 0 16px">
       <b>Quick links</b>
       <ul style="margin:10px 0 0; padding-left:20px">
@@ -120,7 +106,6 @@ layout: none
       </ul>
     </div>
 
-    <!-- Cards -->
     <div class="grid cards">
       <article class="card">
         <h3><a target="_blank" href="https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab01">Lab 01 — Intro / Git</a></h3>
