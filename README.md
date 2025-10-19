@@ -174,6 +174,11 @@ https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han
 | 03 | Testing Login (Selenium + pytest) | https://github.com/TuMaiNguyen/n23dcpt091-lab03-login | Có test & báo cáo |
 | 05 | Lecture 05 – Testing (tài liệu + bài làm) | https://github.com/TuMaiNguyen/Lecture05-Testing-N23DCPT091 | PDF ở cột dưới |
 
+### 🔆 Repos mới hoàn thành thêm
+- **Lecture 06 — Analysis** → https://github.com/TuMaiNguyen/Lecture06-Analysis
+- **HIS — BV Chợ Rẫy (Lecture 5&6 – Requirements)** → https://github.com/TuMaiNguyen/HIS-BVCHORAY-LECTURE56-REQUIREMENTS
+- **Multichannel — Sprint 0** → https://github.com/TuMaiNguyen/multichannel-sprint0
+
 **📑 PDF trực tiếp (Lab 05):**  
 - Bài giảng: <https://github.com/TuMaiNguyen/Lecture05-Testing-N23DCPT091/blob/main/Lecture%2005%20Testing.pdf>  
 - Bài làm (Nguyễn Đỗ Tú Mai): <https://github.com/TuMaiNguyen/Lecture05-Testing-N23DCPT091/blob/main/NGUYỄN%20ĐỖ%20TÚ%20MAI-N23DCPT091-LECTURE05-TESTING.pdf>
