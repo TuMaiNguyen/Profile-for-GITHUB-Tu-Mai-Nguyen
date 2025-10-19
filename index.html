@@ -13,45 +13,71 @@ layout: none
 
   <style>
     :root{
-      --bg:#0b1020; --card:#121a33; --muted:#97a0c3; --text:#e7ecff;
-      --brand:#7aa2ff; --brand2:#9ae7ff; --ring:rgba(122,162,255,.35);
+      /* PALETTE SÁNG */
+      --bg:#f7faff;          /* nền tổng thể */
+      --paper:#ffffff;       /* card trắng */
+      --ink:#15213b;         /* text chính */
+      --muted:#5f6c8a;       /* text phụ */
+      --brand:#6c63ff;       /* tím pastel */
+      --brand2:#5ce1e6;      /* xanh mint */
+      --ring:rgba(108,99,255,.18);
+      --shadow:0 10px 28px rgba(22,34,70,.08);
+      --border:1px solid rgba(21,33,59,.08);
+      --grad:linear-gradient(120deg,#e9ecff 0%,#fdf9ff 40%,#e9fbff 100%);
     }
+
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:#0b1020;color:var(--text);
-      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;}
+    html,body{
+      margin:0; padding:0; color:var(--ink); background:var(--grad);
+      font:16px/1.65 system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial;
+      -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    }
     a{color:var(--brand); text-decoration:none}
     a:hover{text-decoration:underline}
 
     .container{max-width:1100px; margin:0 auto; padding:24px}
-    header{position:sticky; top:0; z-index:10;
-      background:rgba(11,16,32,.8); backdrop-filter:saturate(120%) blur(8px);
-      border-bottom:1px solid rgba(151,160,195,.12)}
+    header{
+      position:sticky; top:0; z-index:10;
+      background:rgba(255,255,255,.8);
+      backdrop-filter:saturate(120%) blur(10px);
+      border-bottom:var(--border);
+    }
     .nav{display:flex; align-items:center; justify-content:space-between; gap:16px}
-    .nav .brand{font-weight:700; letter-spacing:.3px}
+    .nav .brand{font-weight:800; letter-spacing:.3px}
     .nav ul{display:flex; gap:18px; list-style:none; margin:0; padding:0}
-    .btn{display:inline-block; padding:10px 14px; border-radius:12px;
-      background:linear-gradient(135deg,var(--brand),var(--brand2)); color:#0b1020;
-      font-weight:600; box-shadow:0 6px 18px var(--ring)}
+    .btn{
+      display:inline-block; padding:10px 14px; border-radius:12px;
+      background:linear-gradient(135deg,var(--brand),var(--brand2));
+      color:#0b1020; font-weight:700; box-shadow:0 8px 20px var(--ring);
+      border:0;
+    }
 
-    /* ==== HERO ẢNH ĐƠN GIẢN – KHÔNG CÒN MẢNG ĐEN ==== */
-    .hero-img{margin:16px auto 8px; border-radius:16px; overflow:hidden;
-      border:1px solid rgba(151,160,195,.18); background:#0f1630}
-    .hero-img img{display:block; width:100%; height:auto}
+    /* HERO: ảnh cover sáng, không overlay tối */
+    .hero{
+      margin-top:16px; border-radius:18px; overflow:hidden; background:var(--paper);
+      border:var(--border); box-shadow:var(--shadow);
+    }
+    .hero img{display:block; width:100%; height:auto}
 
-    section{padding:24px 0}
-    section[id]{scroll-margin-top:84px} /* để anchor không bị header che */
-    h2{margin:0 0 8px}
+    section{padding:26px 0}
+    section[id]{scroll-margin-top:84px} /* anchor không bị header che */
+    h1,h2,h3{margin:0 0 10px}
+    h2{font-size:26px}
     .muted{color:var(--muted)}
 
     .grid{display:grid; gap:16px}
     .grid.cards{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
-    .card{background:var(--card); border:1px solid rgba(151,160,195,.12);
-      border-radius:16px; padding:18px; transition:.2s transform,.2s box-shadow,.2s border-color}
-    .card:hover{transform:translateY(-2px); border-color:rgba(122,162,255,.45); box-shadow:0 10px 28px var(--ring)}
+    .card{
+      background:var(--paper); border:var(--border); border-radius:16px; padding:18px;
+      box-shadow:var(--shadow); transition:transform .18s ease, box-shadow .18s ease
+    }
+    .card:hover{transform:translateY(-2px); box-shadow:0 14px 34px rgba(22,34,70,.12)}
     .tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
-    .tag{font-size:12px; color:#0b1020; background:linear-gradient(135deg,var(--brand),var(--brand2));
-      padding:4px 8px; border-radius:999px}
-    footer{padding:24px 0 48px; color:var(--muted)}
+    .tag{
+      font-size:12px; color:#0b1020; background:linear-gradient(135deg,#e0e7ff,#d5fff8);
+      padding:4px 8px; border-radius:999px; border:var(--border)
+    }
+    footer{padding:28px 0 48px; color:var(--muted)}
   </style>
 </head>
 <body>
@@ -62,7 +88,7 @@ layout: none
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#labs">Labs</a></li>
-      <li><a href="#lecture05">Lecture 05</a></li>
+      <li><a href="#projects">Lectures & Projects</a></li>
       <li><a class="btn" href="https://github.com/TuMaiNguyen" target="_blank" rel="noreferrer">GitHub</a></li>
     </ul>
   </div>
@@ -70,22 +96,22 @@ layout: none
 
 <main class="container">
 
-  <!-- ẢNH COVER Ở ĐẦU TRANG (không ảnh nền, không overlay) -->
-  <figure class="hero-img">
+  <!-- ẢNH COVER SÁNG -->
+  <figure class="hero">
     <img src="{{ '/cover.jpg' | relative_url }}" alt="Cover image">
   </figure>
 
-  <!-- ABOUT: render README -> sẽ thấy ngay “MY BIO / Branding …” -->
+  <!-- ABOUT (README) -->
   <section id="about">
     <h2>About</h2>
-    <div class="muted">Nội dung lấy trực tiếp từ <code>README.md</code> của repo này.</div>
+    <div class="muted">Nội dung bên dưới được lấy trực tiếp từ <code>README.md</code> của repo này.</div>
     <div class="card" style="margin-top:12px">
       {% capture readme_raw %}{% include_relative README.md %}{% endcapture %}
       {{ readme_raw | markdownify }}
     </div>
   </section>
 
-  <!-- LABS -->
+  <!-- LABS (group & solo) -->
   <section id="labs">
     <h2>Labs — SE-ATM (Group & Solo)</h2>
 
@@ -102,7 +128,6 @@ layout: none
         <li><a target="_blank" href="https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab08-testing">Lab 08 — Testing (Group)</a></li>
         <li><a target="_blank" href="https://github.com/TuMaiNguyen/lab02-hotel-booking-mai">Lab 02 — Hotel Booking (Solo)</a></li>
         <li><a target="_blank" href="https://github.com/TuMaiNguyen/n23dcpt091-lab03-login">Lab 03 — Login (Solo)</a></li>
-        <li><a target="_blank" href="https://github.com/TuMaiNguyen/Lecture05-Testing-N23DCPT091">Lecture 05 — Testing (Repo)</a></li>
       </ul>
     </div>
 
@@ -111,42 +136,34 @@ layout: none
         <h3><a target="_blank" href="https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab01">Lab 01 — Intro / Git</a></h3>
         <div class="tags"><span class="tag">Git</span><span class="tag">HTML/CSS</span></div>
       </article>
-
       <article class="card">
         <h3><a target="_blank" href="https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab02">Lab 02 — Requirements</a></h3>
         <div class="tags"><span class="tag">UML</span><span class="tag">Use Case</span></div>
       </article>
-
       <article class="card">
         <h3><a target="_blank" href="https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab03">Lab 03 — Design</a></h3>
         <div class="tags"><span class="tag">UML</span></div>
       </article>
-
       <article class="card">
         <h3><a target="_blank" href="https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab04-login">Lab 04 — Login Module</a></h3>
         <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
       </article>
-
       <article class="card">
         <h3><a target="_blank" href="https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab05-report">Lab 05 — Report</a></h3>
         <div class="tags"><span class="tag">Docs</span></div>
       </article>
-
       <article class="card">
         <h3><a target="_blank" href="https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab06-atm-class">Lab 06 — ATM Class</a></h3>
         <div class="tags"><span class="tag">OOP</span></div>
       </article>
-
       <article class="card">
         <h3><a target="_blank" href="https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab07-withdraw-module">Lab 07 — Withdraw Module</a></h3>
         <div class="tags"><span class="tag">Module</span></div>
       </article>
-
       <article class="card">
         <h3><a target="_blank" href="https://github.com/TuMaiNguyen/se-atm-2025-group-mai-thuy-han/tree/main/labs/lab08-testing">Lab 08 — Testing</a></h3>
         <div class="tags"><span class="tag">Testing</span></div>
       </article>
-
       <article class="card">
         <h3><a target="_blank" href="https://github.com/TuMaiNguyen/lab02-hotel-booking-mai">Lab 02 — Hotel Booking (repo riêng)</a></h3>
         <ul style="margin:8px 0 0; padding-left:18px">
@@ -156,7 +173,6 @@ layout: none
         </ul>
         <div class="tags"><span class="tag">UML</span><span class="tag">SQL</span></div>
       </article>
-
       <article class="card">
         <h3><a target="_blank" href="https://github.com/TuMaiNguyen/n23dcpt091-lab03-login">Lab 03 — Login (repo riêng)</a></h3>
         <ul style="margin:8px 0 0; padding-left:18px">
@@ -170,20 +186,36 @@ layout: none
     </div>
   </section>
 
-  <!-- LECTURE 05 -->
-  <section id="lecture05">
-    <h2>Lecture 05 — Testing</h2>
+  <!-- LECTURES & PROJECTS (đã thêm 3 repo mới) -->
+  <section id="projects">
+    <h2>Lectures & Projects</h2>
     <div class="grid cards">
       <article class="card">
-        <h3><a target="_blank" href="https://github.com/TuMaiNguyen/Lecture05-Testing-N23DCPT091">Repo Lecture 05</a></h3>
+        <h3><a target="_blank" href="https://github.com/TuMaiNguyen/Lecture05-Testing-N23DCPT091">Lecture 05 — Testing</a></h3>
         <ul style="margin:8px 0 0; padding-left:18px">
-          <li><a target="_blank" href="https://github.com/TuMaiNguyen/Lecture05-Testing-N23DCPT091/blob/main/Lecture%2005%20Testing.pdf">Lecture 05 Testing.pdf</a></li>
+          <li><a target="_blank" href="https://github.com/TuMaiNguyen/Lecture05-Testing-N23DCPT091/blob/main/Lecture%2005%20Testing.pdf">Slide PDF</a></li>
           <li><a target="_blank" href="https://github.com/TuMaiNguyen/Lecture05-Testing-N23DCPT091/blob/main/README.md">README</a></li>
         </ul>
         <div class="tags"><span class="tag">Testing</span><span class="tag">Lecture</span></div>
       </article>
+
+      <article class="card">
+        <h3><a target="_blank" href="https://github.com/TuMaiNguyen/Lecture06-Analysis">Lecture 06 — Analysis</a></h3>
+        <div class="tags"><span class="tag">Lecture</span><span class="tag">Analysis</span></div>
+      </article>
+
+      <article class="card">
+        <h3><a target="_blank" href="https://github.com/TuMaiNguyen/HIS-BVCHORAY-LECTURE56-REQUIREMENTS">HIS — BV Chợ Rẫy (L5&6 Requirements)</a></h3>
+        <div class="tags"><span class="tag">Requirements</span><span class="tag">UML</span></div>
+      </article>
+
+      <article class="card">
+        <h3><a target="_blank" href="https://github.com/TuMaiNguyen/multichannel-sprint0">Multichannel — Sprint 0</a></h3>
+        <div class="tags"><span class="tag">Sprint</span><span class="tag">Planning</span></div>
+      </article>
     </div>
   </section>
+
 </main>
 
 <footer class="container">
